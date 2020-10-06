@@ -1,0 +1,5 @@
+# MSOE | EE2920 Embedded Systems Labs | AVR ATmega328P (C programming language)
+
+### Lab 4: Digital Line Sensor Array
+
+This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8RC module in order to detect incoming events from its reflectance sensors and measure the magnitude of reflection detected by them. The activity proposed also makes use of a LCD display to show the state of each one of the four used sensors, showing a sequence of four places on display relative to their states. The measuring is made by counting the time until the discharge of each sensor gets the threshold of the microcontroller used. If the system detects a higher reflectance, compared to a reference value, the time decreases and ‘1’ will be place in the position relative to the sensor used. On the other hand, if the level of reflectance gets lower, the time of discharge increases and gets higher than reference value, it will be shown ‘0’.

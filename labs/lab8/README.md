@@ -1,0 +1,7 @@
+# MSOE | EE2920 Embedded Systems Labs | AVR ATmega328P (C programming language)
+
+### Lab 8: Infrared Object Sensing
+
+The system described in this report makes use of some of the ATmega328P resources, such as GPIO, timers and interrupt system, to perform the interface of a distance-sensitive based structure composed by IR LED and receiver. The idea is to use the magnitude of IR light reflected by objects in front of the sensor to estimate the distance between the system and the object. 
+
+The interface mounted to interface the IR components to the used microcontroller needs to use specifics signals according to the concepts presented in classroom. In order to get better capacity of reflectance for such purpose, the signal that drives the IR LED should be have peculiar characteristics: 16 square wave pulses in 38kHz should be applied on the component, followed by an idle interval of five milliseconds until the process repeat. The implementation of such signal was made by a combination between timers and its interruptions to get desired results. The IR receiver could sense the reflectance of these pulses and its output is processed to get an interval of low voltage presented when each burst is applied. The larger is this interval, the closer is the object. In other words, based in the time of this interval, it is possible to estimate how distant the object reflector is.
