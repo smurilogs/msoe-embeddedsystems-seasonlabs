@@ -8,7 +8,10 @@
 
 void lcd_init(void)
 {
-	LCD_PINS = 0xFF;
+	LCD_DATA_PINS  |= (1 << LCD_DATA_D7) | (1 << LCD_DATA_D6) | (1 << LCD_DATA_D5) | (1 << LCD_DATA_D4);	
+	LCD_CTRL_PINS  |= (1 << LCD_CTRL_EN) | (1 << LCD_CTRL_RS);
+
+	LCD_DATA_PINS = 0xFF;
 	_delay_ms(15);
 
 	lcd_cmd(0x02);
@@ -21,19 +24,19 @@ void lcd_init(void)
 
 void lcd_cmd(unsigned char cmnd)
 {
-	LCD_PORT = (LCD_PORT & 0x0F) | (cmnd & 0xF0);
-	LCD_PORT &= ~ (1<<LCD_RS_PIN);
-	LCD_PORT |= (1<<LCD_EN_PIN);
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (cmnd & 0xF0);
+	LCD_CTRL_PORT &= ~ (1 << LCD_CTRL_RS);
+	LCD_CTRL_PORT |= (1 << LCD_CTRL_EN);
 	_delay_us(1);
 	
-	LCD_PORT &= ~ (1<<LCD_EN_PIN);
+	LCD_CTRL_PORT &= ~(1 << LCD_CTRL_EN);
 	_delay_us(200);
 	
-	LCD_PORT = (LCD_PORT & 0x0F) | (cmnd << 4);
-	LCD_PORT |= (1<<LCD_EN_PIN);
+	LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (cmnd << 4);
+	LCD_CTRL_PORT |= (1<<LCD_CTRL_EN);
 	_delay_us(1);
 	
-	LCD_PORT &= ~ (1<<LCD_EN_PIN);
+	LCD_CTRL_PORT &= ~ (1<<LCD_CTRL_EN);
 	_delay_ms(2);
 }
 
@@ -51,19 +54,19 @@ void lcd_print(char *str)
 	int i;
 	for(i = 0; str[i] != 0; i++)
 	{
-		LCD_PORT = (LCD_PORT & 0x0F) | (str[i] & 0xF0);
-		LCD_PORT |= (1 << LCD_RS_PIN);
-		LCD_PORT |= (1 << LCD_EN_PIN);
+		LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (str[i] & 0xF0);
+		LCD_CTRL_PORT |= (1 << LCD_CTRL_RS);
+		LCD_CTRL_PORT |= (1 << LCD_CTRL_EN);
 		_delay_us(1);
 	
-		LCD_PORT &= ~(1 << LCD_EN_PIN);
+		LCD_CTRL_PORT &= ~(1 << LCD_CTRL_EN);
 		_delay_us(200);
 	
-		LCD_PORT = (LCD_PORT & 0x0F) | (str[i] << 4);
-		LCD_PORT |= (1 << LCD_EN_PIN);
+		LCD_DATA_PORT = (LCD_DATA_PORT & 0x0F) | (str[i] << 4);
+		LCD_CTRL_PORT |= (1 << LCD_CTRL_EN);
 		_delay_us(1);
 	
-		LCD_PORT &= ~(1 << LCD_EN_PIN);
+		LCD_CTRL_PORT &= ~(1 << LCD_CTRL_EN);
 		_delay_ms(2);
 	}
 }
