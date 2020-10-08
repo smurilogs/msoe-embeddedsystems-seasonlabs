@@ -52,14 +52,14 @@ This lab makes use of the ATmega328P microcontroller's GPIO to interface five di
 ##### Schematic:
 
 
-<p align="left">
-<img src="labs/lab02 - Bouncing LEDs/schematic.png" alt="Logo" width="600" height="750">
+<p align="center">
+<img src="labs/lab02 - Bouncing LEDs/schematic.png" width="600">
 </p>
 
 ##### Flowchart:
 
-<p align="left">
-<img src="labs/lab02 - Bouncing LEDs/flowchart.png" alt="Logo" width="600" height="880">
+<p align="center">
+<img src="labs/lab02 - Bouncing LEDs/flowchart.png" width="600">
 </p>
 
 #### Lab 3: LCD and Switch Debouncing
@@ -80,7 +80,16 @@ The purpose of the advanced assignment of this project is to make use of a LCD d
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab03 - LCDs and Switch Debouncing/schematic.png" width="700">
+</p>
+
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab03 - LCDs and Switch Debouncing/flowchart.png" width="350">
+</p>
 
 #### Lab 4: Digital Line Sensor Array
 
@@ -96,7 +105,15 @@ This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab04 - Digital Line Sensor Array/schematic.png" width="650">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab04 - Digital Line Sensor Array/flowchart.png" width="400">
+</p>
 
 #### Lab 5: Analog-to-Digital Conversion
 
@@ -113,7 +130,15 @@ In the last section of this report (Attachment 4) is shown the characterization 
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab05 - Analog to Digital Conversion/schematic.png" width="650">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab05 - Analog to Digital Conversion/flowchart.png" width="200">
+</p>
 
 #### Lab 6: A/D Conversion, Interrupts and Analog Sensors
 
@@ -133,7 +158,15 @@ In addition, the system interfaces two structures of voltage dividers that use L
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab06 - AD Conversion, Interrupts and Analog Sensors/schematic.png" width="700">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab06 - AD Conversion, Interrupts and Analog Sensors/flowchart.png" width="600">
+</p>
 
 #### Lab 7: Waveform Generation using the Timer/Counter Subsystem
 
@@ -153,7 +186,15 @@ In addition, the system interfaces two voltage dividers that use LDRs to change 
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab07 - Waveform Generator/schematic.png" width="580">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab07 - Waveform Generator/flowchart.png" width="440">
+</p>
 
 #### Lab 8: Infrared Object Sensing
 
@@ -171,7 +212,15 @@ The interface mounted to interface the IR components to the used microcontroller
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab08 - Infrared Object Sensing/schematic.png" width="700">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs/lab08 - Infrared Object Sensing/flowchart.png" width="600">
+</p>
 
 #### Lab 9: Servo Motor Control
 
@@ -185,4 +234,12 @@ The interface mounted to interface the IR components to the used microcontroller
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs//schematic.png" width="400">
+</p>
+
 ##### Flowchart:
+
+<p align="center">
+<img src="labs//flowchart.png" width="400">
+</p>
