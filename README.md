@@ -21,23 +21,28 @@ The series requirements and content is shown in detail by the section for each l
 * [Lab 8: Infrared Object Sensing]()
 * [Lab 9: Servo Motor Control]()
 
-## Labs Series
-
-#### Lab 1: Blinking LED
+## Lab 1: Blinking LED
 
 ##### Requirements:
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
 * 1x LED's and 1x 330 ohm resistors
 
 ##### Schematic:
 
+<p align="center">
+<img src="labs/lab01/schematic.png" width="740">
+</p>
+
 ##### Flowchart:
 
-#### Lab 2: Bouncing LEDs
+<p align="center">
+<img src="labs/lab01/flowchart.png" width="400">
+</p>
+
+## Lab 2: Bouncing LEDs
 
 ##### Requirements:
 
@@ -45,24 +50,23 @@ This lab makes use of the ATmega328P microcontroller's GPIO to interface five di
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 5x LED's and 5x 330 ohm resistors
+* 5x LED's
+* 5x 330Ω resistors
 
 ##### Schematic:
 
-
 <p align="center">
-<img src="labs/lab02 - Bouncing LEDs/schematic.png" width="600">
+<img src="labs/lab02/schematic.png" width="550">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab02 - Bouncing LEDs/flowchart.png" width="600">
+<img src="labs/lab02/flowchart.png" width="600">
 </p>
 
-#### Lab 3: LCD and Switch Debouncing
+## Lab 3: LCD and Switch Debouncing
 
 ##### Requirements:
 
@@ -74,24 +78,25 @@ The purpose of the advanced assignment of this project is to make use of a LCD d
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* HD44780 LCD display
+* 10KΩ potentiometer
+* 2x push-buttons
+* 2x 330Ω resistors
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab03 - LCDs and Switch Debouncing/schematic.png" width="700">
+<img src="labs/lab03/schematic.png" width="620">
 </p>
-
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab03 - LCDs and Switch Debouncing/flowchart.png" width="350">
+<img src="labs/lab03/flowchart.png" width="400">
 </p>
 
-#### Lab 4: Digital Line Sensor Array
+## Lab 4: Digital Line Sensor Array
 
 ##### Requirements:
 
@@ -99,23 +104,24 @@ This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* HD44780 LCD display
+* 10KΩ potentiometer
+* QTR-8RC module
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab04 - Digital Line Sensor Array/schematic.png" width="650">
+<img src="labs/lab04/schematic.png" width="640">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab04 - Digital Line Sensor Array/flowchart.png" width="400">
+<img src="labs/lab04/flowchart.png" width="450">
 </p>
 
-#### Lab 5: Analog-to-Digital Conversion
+## Lab 5: Analog-to-Digital Conversion
 
 ##### Requirements:
 
@@ -124,23 +130,23 @@ In the last section of this report (Attachment 4) is shown the characterization 
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* HD44780 LCD display
+* 2x 10KΩ potentiometer
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab05 - Analog to Digital Conversion/schematic.png" width="650">
+<img src="labs/lab05/schematic.png" width="620">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab05 - Analog to Digital Conversion/flowchart.png" width="200">
+<img src="labs/lab05/flowchart.png" width="250">
 </p>
 
-#### Lab 6: A/D Conversion, Interrupts and Analog Sensors
+## Lab 6: A/D Conversion, Interrupts and Analog Sensors
 
 ##### Requirements:
 
@@ -152,23 +158,28 @@ In addition, the system interfaces two structures of voltage dividers that use L
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* HD44780 LCD display
+* 10KΩ potentiometer
+* QTR-1A module
+* 3x LED's
+* 2x LDR sensors
+* 2x 10KΩ resistors
+* 3x 330Ω resistors
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab06 - AD Conversion, Interrupts and Analog Sensors/schematic.png" width="700">
+<img src="labs/lab06/schematic.png" width="680">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab06 - AD Conversion, Interrupts and Analog Sensors/flowchart.png" width="600">
+<img src="labs/lab06/flowchart.png" width="650">
 </p>
 
-#### Lab 7: Waveform Generation using the Timer/Counter Subsystem
+## Lab 7: Waveform Generation using the Timer/Counter Subsystem
 
 ##### Requirements:
 
@@ -180,23 +191,23 @@ In addition, the system interfaces two voltage dividers that use LDRs to change 
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* 2x push-buttons
+* 2x 330Ω resistors
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab07 - Waveform Generator/schematic.png" width="580">
+<img src="labs/lab07/schematic.png" width="580">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab07 - Waveform Generator/flowchart.png" width="440">
+<img src="labs/lab07/flowchart.png" width="480">
 </p>
 
-#### Lab 8: Infrared Object Sensing
+## Lab 8: Infrared Object Sensing
 
 ##### Requirements:
 
@@ -206,40 +217,40 @@ The interface mounted to interface the IR components to the used microcontroller
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 
+* HD44780 LCD display
+* 2x LED's
+* 2x 330Ω resistors
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab08 - Infrared Object Sensing/schematic.png" width="700">
+<img src="labs/lab08/schematic.png" width="650">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab08 - Infrared Object Sensing/flowchart.png" width="600">
+<img src="labs/lab08/flowchart.png" width="600">
 </p>
 
-#### Lab 9: Servo Motor Control
+## Lab 9: Servo Motor Control
 
 ##### Requirements:
 
 ##### Built with:
 
-* C/C++ Programming Language
 * ATmega328P (you can use Arduino Uno/Nano boards)
 * 
 
 ##### Schematic:
 
 <p align="center">
-<img src="labs//schematic.png" width="400">
+<img src="labs/lab09/schematic.png" width="580">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs//flowchart.png" width="400">
+<img src="labs/lab09/flowchart.png" width="400">
 </p>
