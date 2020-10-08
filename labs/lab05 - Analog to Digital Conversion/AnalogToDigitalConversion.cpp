@@ -1,5 +1,5 @@
 /*
- * AnalogToDigitalConversion.c
+ * AnalogToDigitalConversion.cpp
  *
  *  Created on: Oct 2, 2014
  *      Author: gonzagasilvas

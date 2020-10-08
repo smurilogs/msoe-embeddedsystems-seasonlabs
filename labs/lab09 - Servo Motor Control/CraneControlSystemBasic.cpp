@@ -1,6 +1,6 @@
 
 /*
- * CraneControlSystemBasic.c
+ * CraneControlSystemBasic.cpp
  *
  *  Created on: Nov 4, 2014
  *      Author: gonzagasilvas

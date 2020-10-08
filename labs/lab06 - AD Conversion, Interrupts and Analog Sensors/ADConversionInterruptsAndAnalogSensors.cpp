@@ -1,5 +1,6 @@
 /*
- * ADConversionInterruptsAndAnalogSensors.c
+ * ADConversionInterruptsAndAnalogSensors.cpp
+ * 
  *
  *  Created on: Oct 14, 2014
  *      Author: gonzagasilvas

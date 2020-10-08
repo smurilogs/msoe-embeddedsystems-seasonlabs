@@ -1,4 +1,4 @@
-/* BouncingLEDs.c
+/* BouncingLEDs.cpp
  *
  *      Created on: Sep 11, 2014
  *      Author: gonzagasilvas

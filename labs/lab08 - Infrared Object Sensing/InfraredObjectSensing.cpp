@@ -1,6 +1,6 @@
 
 /*
- * InfraredObjectSensing.c
+ * InfraredObjectSensing.cpp
  *
  *  Created on: Oct 26, 2014
  *      Author: gonzagasilvas

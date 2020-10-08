@@ -1,5 +1,5 @@
 /*
- * BlinkingLED.c
+ * BlinkingLED.cpp
  *
  *  Created on: Sep 11, 2014
  *      Author: smurilogs

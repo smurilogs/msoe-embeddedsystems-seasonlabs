@@ -2,7 +2,7 @@
 #include <avr/interrupt.h>
 
 /*
- * WaveformGenerator.c
+ * WaveformGenerator.cpp
  *
  *  Created on: Oct 19, 2014
  *      Author: gonzagasilvas
