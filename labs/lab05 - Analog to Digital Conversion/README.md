@@ -1,6 +1,0 @@
-# MSOE | EE2920 Embedded Systems Labs | AVR ATmega328P (C programming language)
-
-### Lab 5: Analog-to-Digital Conversion
-
-The system described in this report uses the ATmega328P microcontroller analog-to-digital converter module to measure the intensity of “warm” presented by a symbolic sensor of temperature (whose variations are emulated by the output voltage of a 10 KΩ potentiometer). Using the 10-bit resolution A/D converter available in the ATmega328P, it is possible to get digital values from 0 to 1023. As the requirements of this lab presents a linear dependence between the gotten value and a range of temperature between 0 and 100ºC, it was implemented a linear conversion between the two measuring scales. After that, digital value and the converted temperature value are shown on a LCD display in order to get this linearity visible from the equivalence of the system samples.
-In the last section of this report (Attachment 4) is shown the characterization of the signal by the grouping different scales from the same experimental samples based on ADC digital value (ADCW), temperature (°C) and analog input voltage from the potentiometer (Volts). In addition, a plot of ADCW vs. analog input voltage is also shown to demo the tendency to the linearity reached by the implemented system.
