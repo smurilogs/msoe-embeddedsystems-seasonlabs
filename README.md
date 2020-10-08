@@ -1,16 +1,10 @@
 # MSOE | EE2920 Embedded Systems Labs
 
-### About the Project
+## About the Project
 
 This repository brings up an introductory series of implementations on how to design Embedded Systems when dealing with registers level using C/C++ Programming language. The concepts covered in this series help you to understand the general working of modern microcontrollers, including many of their common peripherals.
 
 The series presented here is a throwback of a course called EE2920 Embedded Systems, taken by me as international student back in the Fall of 2014 at Milwaukee School of Engineering (MSOE). For this course, the microcontroller used was the ATmega328P, famous to compose Arduino boards such as Arduino Uno and Arduino Nano. However the general concepts covered touch a lot of concepts that are common sense for lots of modern microcontrollers, so the knowledge obtained from this course can be easily used to better understand the internal architecture other devices and build firmware for them. 
-
-Built with:
-
-* C/C++ Programming Language
-* ATmega328P (you can use Arduino Uno/Nano boards)
-* Peripheral components specified in each lab section
 
 
 ## Table of Contents
