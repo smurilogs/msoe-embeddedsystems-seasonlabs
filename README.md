@@ -11,24 +11,27 @@ The series presented here is a throwback of a course called EE2920 Embedded Syst
 
 The series requirements and content is shown in detail by the section for each lab. The following content topics present each lab's title to present to you a general idea of what it approached in this serie: 
 
-* [Lab 1: Blinking LED]()
-* [Lab 2: Bouncing LEDs]()
-* [Lab 3: LCD and Switch Debouncing]()
-* [Lab 4: Digital Line Sensor Array]()
-* [Lab 5: Analog-to-Digital Conversion]()
-* [Lab 6: A/D Conversion, Interrupts and Analog Sensors]()
-* [Lab 7: Waveform Generation]()
-* [Lab 8: Infrared Object Sensing]()
-* [Lab 9: Servo Motor Control]()
+* [Lab 01: simple Hello World](#lab-01-simple-hello-world)
+* [Lab 02: GPIO interfacing LED's and Switches](#lab-02-gpio-interfacing-leds-and-switches)
+* [Lab 03: GPIO in Switch Debouncing and HD44780 LCD Interfacing](#lab-03-gpio-in-switch-debouncing-and-hd44780-lcd-interfacing)
+* [Lab 04: GPIO interfacing a QTR-8RC Sensor Array Module](#lab-04-gpio-interfacing-a-qtr-8rc-sensor-array-module)
+* [Lab 05: Analog to Digital Conversion](#lab-05-analog-to-digital-conversion)
+* [Lab 06: A/D Conversion, Interrupts and Analog Sensors](#lab-06-ad-conversion-interrupts-and-analog-sensors)
+* [Lab 07: Waveform Generation](#lab-07-waveform-generation)
+* [Lab 08: Infrared Object Sensing](#lab-08-infrared-object-sensing)
+* [Lab 09: Servo Motor Control](#lab-09-servo-motor-control)
 
-## Lab 1: Blinking LED
+## Lab 01: simple Hello World
 
 ##### Requirements:
+
+This lab is a simple "Hello World" routine sign if the ATmega328P and wiring power supply is working fine. That is made by setting up a blinking LED with an interval of 1 second between blinks.
 
 ##### Built with:
 
 * ATmega328P (you can use Arduino Uno/Nano boards)
-* 1x LED's and 1x 330 ohm resistors
+* 1x LED
+* 1x 330Ω resistor
 
 ##### Schematic:
 
@@ -39,14 +42,14 @@ The series requirements and content is shown in detail by the section for each l
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab01/flowchart.png" width="400">
+<img src="labs/lab01/flowchart.png" width="160">
 </p>
 
-## Lab 2: Bouncing LEDs
+## Lab 02: GPIO interfacing LED's and Switches
 
 ##### Requirements:
 
-This lab makes use of the ATmega328P microcontroller's GPIO to interface five digital outputs (5 LEDs) and two digital inputs (2 switches/pushbuttons). The idea is to use the buttons to control a row of LEDs arranged in an upside down "V" formation. In this formation, only one of the LEDs are on at the same time, with adjacent sequential transitions of LED's states every second. The first switch can be pressed to toggle the direction of these transitions, which can turn from clockwise to counter clockwise, or vice versa. The second switch keeps all LEDs off as long as it's being pressed. 
+This lab makes use of the ATmega328P microcontroller's GPIO to interface five digital outputs (5 LEDs) and two digital inputs (2 switches/push-buttons). The idea is to use the buttons to control a row of LEDs arranged in an upside down "V" formation. In this formation, only one of the LEDs are on at the same time, with adjacent sequential transitions of LED's states every second. The first switch can be pressed to toggle the direction of these transitions, which can turn from clockwise to counter clockwise, or vice versa. The second switch keeps all LEDs off as long as it's being pressed. 
 
 ##### Built with:
 
@@ -57,7 +60,7 @@ This lab makes use of the ATmega328P microcontroller's GPIO to interface five di
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab02/schematic.png" width="550">
+<img src="labs/lab02/schematic.png" width="540">
 </p>
 
 ##### Flowchart:
@@ -66,7 +69,7 @@ This lab makes use of the ATmega328P microcontroller's GPIO to interface five di
 <img src="labs/lab02/flowchart.png" width="600">
 </p>
 
-## Lab 3: LCD and Switch Debouncing
+## Lab 03: GPIO in Switch Debouncing and HD44780 LCD Interfacing
 
 ##### Requirements:
 
@@ -87,7 +90,7 @@ The purpose of the advanced assignment of this project is to make use of a LCD d
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab03/schematic.png" width="620">
+<img src="labs/lab03/schematic.png" width="600">
 </p>
 
 ##### Flowchart:
@@ -96,7 +99,7 @@ The purpose of the advanced assignment of this project is to make use of a LCD d
 <img src="labs/lab03/flowchart.png" width="400">
 </p>
 
-## Lab 4: Digital Line Sensor Array
+## Lab 04: GPIO interfacing a QTR-8RC Sensor Array Module
 
 ##### Requirements:
 
@@ -112,7 +115,7 @@ This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab04/schematic.png" width="640">
+<img src="labs/lab04/schematic.png" width="620">
 </p>
 
 ##### Flowchart:
@@ -121,7 +124,7 @@ This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8
 <img src="labs/lab04/flowchart.png" width="450">
 </p>
 
-## Lab 5: Analog-to-Digital Conversion
+## Lab 05: Analog to Digital Conversion
 
 ##### Requirements:
 
@@ -137,16 +140,16 @@ In the last section of this report (Attachment 4) is shown the characterization 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab05/schematic.png" width="620">
+<img src="labs/lab05/schematic.png" width="600">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab05/flowchart.png" width="250">
+<img src="labs/lab05/flowchart.png" width="220">
 </p>
 
-## Lab 6: A/D Conversion, Interrupts and Analog Sensors
+## Lab 06: A/D Conversion, Interrupts and Analog Sensors
 
 ##### Requirements:
 
@@ -170,16 +173,16 @@ In addition, the system interfaces two structures of voltage dividers that use L
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab06/schematic.png" width="680">
+<img src="labs/lab06/schematic.png" width="640">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab06/flowchart.png" width="650">
+<img src="labs/lab06/flowchart.png" width="660">
 </p>
 
-## Lab 7: Waveform Generation using the Timer/Counter Subsystem
+## Lab 07: Waveform Generation
 
 ##### Requirements:
 
@@ -198,16 +201,16 @@ In addition, the system interfaces two voltage dividers that use LDRs to change 
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab07/schematic.png" width="580">
+<img src="labs/lab07/schematic.png" width="560">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab07/flowchart.png" width="480">
+<img src="labs/lab07/flowchart.png" width="460">
 </p>
 
-## Lab 8: Infrared Object Sensing
+## Lab 08: Infrared Object Sensing
 
 ##### Requirements:
 
@@ -225,16 +228,16 @@ The interface mounted to interface the IR components to the used microcontroller
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab08/schematic.png" width="650">
+<img src="labs/lab08/schematic.png" width="620">
 </p>
 
 ##### Flowchart:
 
 <p align="center">
-<img src="labs/lab08/flowchart.png" width="600">
+<img src="labs/lab08/flowchart.png" width="580">
 </p>
 
-## Lab 9: Servo Motor Control
+## Lab 09: Servo Motor Control
 
 ##### Requirements:
 
@@ -246,7 +249,7 @@ The interface mounted to interface the IR components to the used microcontroller
 ##### Schematic:
 
 <p align="center">
-<img src="labs/lab09/schematic.png" width="580">
+<img src="labs/lab09/schematic.png" width="540">
 </p>
 
 ##### Flowchart:
