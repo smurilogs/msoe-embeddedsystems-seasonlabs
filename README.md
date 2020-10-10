@@ -15,7 +15,7 @@ The series requirements and content is shown in detail by the section for each l
 * [Lab 02: GPIO interfacing LED's and Switches](#lab-02-gpio-interfacing-leds-and-switches)
 * [Lab 03: GPIO in Switch Debouncing and HD44780 LCD Interfacing](#lab-03-gpio-in-switch-debouncing-and-hd44780-lcd-interfacing)
 * [Lab 04: GPIO interfacing a QTR-8RC Sensor Array Module](#lab-04-gpio-interfacing-a-qtr-8rc-sensor-array-module)
-* [Lab 05: Analog to Digital Conversion](#lab-05-analog-to-digital-conversion)
+* [Lab 05: A/D Conversion](#lab-05-ad-conversion)
 * [Lab 06: A/D Conversion, Interrupts and Analog Sensors](#lab-06-ad-conversion-interrupts-and-analog-sensors)
 * [Lab 07: Waveform Generation](#lab-07-waveform-generation)
 * [Lab 08: Infrared Object Sensing](#lab-08-infrared-object-sensing)
@@ -49,7 +49,7 @@ This lab is a simple "Hello World" routine sign if the ATmega328P and wiring pow
 
 ##### Requirements:
 
-This lab makes use of the ATmega328P microcontroller's GPIO to interface five digital outputs (5 LEDs) and two digital inputs (2 switches/push-buttons). The idea is to use the buttons to control a row of LEDs arranged in an upside down "V" formation. In this formation, only one of the LEDs are on at the same time, with adjacent sequential transitions of LED's states every second. The first switch can be pressed to toggle the direction of these transitions, which can turn from clockwise to counter clockwise, or vice versa. The second switch keeps all LEDs off as long as it's being pressed. 
+This lab is an introduction on digital inputs and outputs, usually referenced as GPIO. It basically makes use of the ATmega328P's GPIO to interface five digital outputs (5 LEDs) and two digital inputs (2 switches/push-buttons) and implements routines of activations involving these devices. The idea is to use the buttons to control a row of LED's arranged in an upside down "V" formation. In this formation, only one of the LEDs are on at the same time, with adjacent sequential transitions of LED's states every second. The first switch can be pressed to toggle the direction of these transitions, which can turn from clockwise to counter clockwise, or vice versa. The second switch keeps all LED's off as long as it's being pressed. 
 
 ##### Built with:
 
@@ -73,11 +73,11 @@ This lab makes use of the ATmega328P microcontroller's GPIO to interface five di
 
 ##### Requirements:
 
-This lab it was introduced the use of alphanumeric LCD displays. The interface between the LCD display and the ATmega328p could be easily implemented by the use of a pre-defined structure and relatively high-level functions described in include files recommended to be used in this lab.
+This lab it was introduced the interfacing of the ATmega328P's GPIO with a LCD display. The LCD module interfaced is the HD44780.
 
-In the basic assignment, it is shown a simple system that was able to receive the signals of buttons (1 and 2) to get their states and activate events from them. Basically, the LCD display shows the state of button one, presenting ‘1’ to button pressed and ‘0’ to not pressed. At the same time, button two is used to blink a character in the display when it is held pressed. 
+In the first part of this lab, it's shown a simple system that was able to receive digital signals from two push-buttons to activate events on the LCD display. Basically, the LCD display shows the state of button one, presenting ‘1’ to button pressed and ‘0’ to not pressed. At the same time, button two is used to blink a character in the display when it is held pressed.
 
-The purpose of the advanced assignment of this project is to make use of a LCD display to show a counter that can be incremented (if button one is pressed) or decremented (if button one is pressed while button two is held pressed). To make better use of these buttons, it was implemented a system that uses delays and loops to avoid the detection of bouncing from mechanical switches that are being used in this assignment, and also, prevent that multiple events were detected when buttons are pressed.
+In the second part of this lab, it's to made use of the LCD display to show a counter that can be incremented (if button one is pressed) or decremented (if button one is pressed while button two is held pressed). To make better use of these push-buttons activations, it was implemented a system that uses delays and loops to avoid the detection of bouncing from mechanical switches that are being used in this lab and also prevent that multiple events were detected when buttons are pressed.
 
 ##### Built with:
 
@@ -93,11 +93,18 @@ The purpose of the advanced assignment of this project is to make use of a LCD d
 <img src="labs/lab03/schematic.png" width="600">
 </p>
 
-##### Flowchart:
+##### Flowchart (Part 1):
 
 <p align="center">
-<img src="labs/lab03/flowchart.png" width="400">
+<img src="labs/lab03/flowchart_1.png" width="380">
 </p>
+
+##### Flowchart (Part 2):
+
+<p align="center">
+<img src="labs/lab03/flowchart_2.png" width="550">
+</p>
+
 
 ## Lab 04: GPIO interfacing a QTR-8RC Sensor Array Module
 
@@ -124,7 +131,7 @@ This lab makes use of the ATmega328P microcontroller GPIO to interface the QTR-8
 <img src="labs/lab04/flowchart.png" width="450">
 </p>
 
-## Lab 05: Analog to Digital Conversion
+## Lab 05: A/D Conversion
 
 ##### Requirements:
 
