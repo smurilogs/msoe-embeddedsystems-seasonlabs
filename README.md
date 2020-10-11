@@ -259,8 +259,14 @@ The interface mounted to interface the IR components to the used microcontroller
 <img src="labs/lab09/schematic.png" width="540">
 </p>
 
-##### Flowchart:
+##### Flowchart (Part 1):
 
 <p align="center">
-<img src="labs/lab09/flowchart.png" width="400">
+<img src="labs/lab09/flowchart1.png" width="600">
+</p>
+
+##### Flowchart (Part 2):
+
+<p align="center">
+<img src="labs/lab09/flowchart2.png" width="1000">
 </p>
