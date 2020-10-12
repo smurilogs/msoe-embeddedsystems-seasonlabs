@@ -1,6 +1,6 @@
 # MSOE | EE2920 Embedded Systems Labs
 
-## About the Project
+## About this Repository
 
 This repository brings up an introductory series of implementations on how to design Embedded Systems when dealing with registers level using C/C++ Programming language. The concepts covered in this series help you to understand the general working of modern microcontrollers, including many of their common peripherals.
 
